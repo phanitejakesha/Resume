@@ -1,0 +1,187 @@
+%-------------------------
+% Resume in Latex
+% Author : Phani Teja 
+% Reference : Sourabh Bajaj - https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*} {\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Phani Teja Kesha}} & Phi Kappa Phi Scholar\\
+  \href{https://github.com/phanitejakesha}{github/phanitejakesha}  & \href{mailto:phani1@umbc.edu}{phani1@umbc.edu}\\
+   \href{https://www.linkedin.com/in/phanitejakesha}{linkedin/phanitejakesha} &  240-319-0698 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Maryland}{Baltimore County, MD}
+      {Master of Science in Computer Science;  GPA: 3.92 }{Aug. 2017 -- Present}
+    \resumeSubheading
+      {Kakatiya Unversity}{Warangal, India}
+      {Bachelor of Engineering in Computer Science;  GPA: 3.82}{Aug. 2013 -- Aug. 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Maryland}{Baltimore County, MD}
+      {Research Assistant}{Dec 2017- Present}
+      \resumeItemListStart
+     
+   
+        \resumeItem{}
+          { Developing an application on malware detection using tensor decomposition, we created an interface which takes the files and creates the tensor, then decomposes using PARAFAC decomposition, this tensor is used for analysis}
+        \resumeItem{}
+          { Initial results are were ranging around 90-95\% for text files and around 80-85\% for executable files}
+      \resumeItemListEnd
+
+ \resumeSubheading
+      {Index Analytics}{Baltimore County, MD}
+      {Data Analyst Intern }{June 2018 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{}
+          {Worked on Opioid addiction dataset from the Virginia Government web source }
+          \resumeItem{}
+          {Visualised the data to show trends/results by implementing rich dynamic dashboards}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {HCL Technologies}{Hyderabad, India}
+      {Technical Intern }{Oct 2015 - Dec 2015}
+      \resumeItemListStart
+        \resumeItem{}
+          {Designed and implemented the architecture of shopping interface, using JavaScript and Amazon Web Services using EC2 Servers and S3 and controlling user management by IAM}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart  
+  \resumeSubItem{Airline Reservation System on Distributed Databases}
+    \resumeItemListStart
+      \resumeItem{}
+      {Implemented a complete system using constant web scrapping of real time information from different web sources and distributed databases for balancing the load of servers which resulted in a improved SQL querying performance}
+      \resumeItem{}
+      {Implemented Front-end using HTML, CSS, Bootstrap and Backend is based on NodeJS frameworks and database is maintained using MySQL}
+         \resumeItemListEnd
+      \resumeSubItem{Prediction and control of Employee Turnover}
+      \resumeItemListStart
+      \resumeItem{}
+      {Developed a predictor to get the list of employees who are likely to leave a company}
+      \resumeItem{}
+      {Implemented classification algorithms like Random Forest Classifier, Deep Neural Networks, SVM, K-Nearest classifier and compared their performance}
+      \resumeItemListEnd
+    
+      \resumeSubItem{Chord - A distributed hash table }
+      \resumeItemListStart
+      \resumeItem{}
+      {Implemented the chord protocol using Go routines and Go channels}
+       \resumeItem{}
+      {Simulated the protocol in a multi-threaded environment using JSON events}
+      \resumeItemListEnd
+      \resumeSubItem{Scoreboard Algorithm for Dynamic Scheduling}
+      \resumeItemListStart
+      \resumeItem{}
+      { Implemented and built the simulator for dynamic scheduling scoreboard
+algorithm in JAVA using Eclipse IDE}
+           \resumeItemListEnd
+    \resumeSubItem{Student Attendance using fingerprint scanner}
+      \resumeItemListStart
+      \resumeItem{}
+      { Collaborated with Computer Science department in my undergraduate to develop a biometric student attendance model utilising a fingerprint
+     scanner using C#, ASP.Net and MySql}
+           \resumeItemListEnd
+      
+      
+  \resumeSubHeadingListEnd
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Amazon Web Services- Certified Solutions Architect} {\vspace{.5em} (GET6KLP2KF111XWN) on \textbf{Jan 2019}}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming Languages}{: Python, JAVA, C++, C, GO}
+    \resumeSubItem{Web Technologies}{: NodeJS, Django, ExpressJS, PassportJS, JavaScript, HTML, CSS, Bootstrap}
+    \resumeSubItem{Database Technologies}{: SQL, MongoDB}
+    \resumeSubItem{Machine Learning}{: DNN, CNN, SVD, KNN, SVM, K-means, Reinforcement learning}
+    \resumeSubItem{Data Visualisation Tools}{: QlikSense, Tableau}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\end{document}
